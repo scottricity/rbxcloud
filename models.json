@@ -1,0 +1,109 @@
+{
+    "games": {
+        "servers": {
+            "previousPageCursor": "string",
+            "nextPageCursor": "string",
+            "data": [
+                {
+                    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "maxPlayers": 0,
+                    "playing": 0,
+                    "playerTokens": [
+                        "string"
+                    ],
+                    "players": [
+                        {
+                            "playerToken": "string",
+                            "id": 0,
+                            "name": "string",
+                            "displayName": "string"
+                        }
+                    ],
+                    "fps": 0,
+                    "ping": 0,
+                    "name": "string",
+                    "vipServerId": 0,
+                    "accessCode": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                    "owner": {
+                        "hasVerifiedBadge": true,
+                        "id": 0,
+                        "name": "string",
+                        "displayName": "string"
+                    }
+                }
+            ]
+        }
+    },
+    "datastores": {
+        "listDataStores": {
+            "datastores": [
+                {
+                    "name": "PlayerInventory",
+                    "createdTime": "2022-02-18T22:38:59.9244932Z"
+                },
+                {
+                    "name": "PlayerExperience",
+                    "createdTime": "2022-02-18T23:00:10.4773508Z"
+                },
+                {
+                    "name": "PlayerWeapons",
+                    "createdTime": "2022-02-18T23:00:22.3725681Z"
+                },
+                {
+                    "name": "PlayerArmor",
+                    "createdTime": "2022-02-18T22:59:33.8472882Z"
+                },
+                {
+                    "name": "PlayerHP",
+                    "createdTime": "2022-02-18T22:58:47.6904028Z"
+                }
+            ],
+            "nextPageCursor": "..."
+        },
+
+        "listDataStoreEntries": {
+            "keys": [
+              {
+                "key": "269323"
+              }
+            ],
+            "nextPageCursor": "eyJ2ZXJzaW9uIjoxLCJjdXJzb3IiOiIzIyJ9"
+          },
+
+        "getDataStoreEntry": {
+            "content-md5": "zuYxEhwuySMvOi8CitXImw==",
+            "roblox-entry-version": "08D9E6A3F2188CFF.0000000001.08D9E6A3F2188CFF.01",
+            "roblox-entry-created-time": "2022-02-02T23:30:06.5388799+00:00",
+            "roblox-entry-version-created-time": "2022-02-02T23:30:06.5388799+00:00",
+            "roblox-entry-userids": [ 1, 2, 3 ]
+          }
+    },
+
+    "orderedstore": {
+        "listEntries": {
+            "entries": [
+                {
+                    "path": "",
+                    "id": "",
+                    "value": 0
+                }
+            ],
+            "nextPageToken": ""
+        }
+    },
+
+    "engine": {
+        "getInstance": {
+            "Id": "string",
+            "Parent": "string",
+            "Name": "string",
+            "Details": {
+              "LocalScript": {
+                "Enabled": true,
+                "RunContext": "Legacy",
+                "Source": "string"
+              }
+            }
+          }
+    }
+}
