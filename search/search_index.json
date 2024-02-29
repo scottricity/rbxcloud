@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":"<p>Introduction</p> <p>rcloud is a TypeScript wrapper for the Roblox OpenCloud API.</p>"}]}
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":"<p>Introduction</p> <p>rcloud is a TypeScript wrapper for the Roblox OpenCloud API. ??? warning</p> <pre><code>This package is in beta and will have code-breaking changes.\n</code></pre>"}]}
