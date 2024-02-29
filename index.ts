@@ -125,4 +125,4 @@ class RobloxCloud {
     }
 }
 
-export default {RobloxCloud, DataStoreProvider, OrderedStoreProvider, routes}
+export {RobloxCloud, DataStoreProvider, OrderedStoreProvider, routes}
