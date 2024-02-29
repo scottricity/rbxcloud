@@ -1,5 +1,5 @@
 {
-  "name": "rbxcloud",
+  "name": "rcloud",
   "version": "1.0.0",
   "type": "module",
   "description": "TypeScript wrapper for the Roblox OpenCloud API.",
