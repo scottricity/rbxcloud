@@ -23,9 +23,8 @@ var makeRequest = async (route: string, endpoint: string, data?: { headers?: Hea
         let requestURL = new URL(withRoute(route, endpoint))
         let requestData = new Request(requestURL, data)
         requestData.headers.set("Content-Type", "application/json")
-        console.log(requestData)
-        let request = await fetch(requestData, {body: data.body})
-        return request.text()
+        let request = await fetch(requestData, {body: data.body, method: data.method})
+        return requestData.method == "GET" ? request.text() : request.json()
     } catch (error) {
         throw error
     }
@@ -70,7 +69,7 @@ export default {
 
     messaging: {
         ['publish']: async (apiKey: string, universeId: string|number, topic: string, message: string) => {
-            let req = await makeRequest('apis', `messaging-service/v1/universes/${universeId}/topics/${topic}`, {headers: {"x-api-key": apiKey}, body: JSON.stringify({message: message}), method: "post"})
+            let req = await makeRequest('apis', `messaging-service/v1/universes/${universeId}/topics/${topic}`, {headers: {"x-api-key": apiKey}, body: JSON.stringify({message: message}), method: "POST"})
             return req
         }
     },
@@ -91,7 +90,7 @@ export default {
                 },
                 method: "POST"
             })
-            return <typeof models.users.multiGetUsers> JSON.parse(req)
+            return <typeof models.users.multiGetUsers> req
         },
 
         ['getUser']: async (userId: number) => {
