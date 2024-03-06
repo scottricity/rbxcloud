@@ -80,5 +80,23 @@ export default {
             let req = await makeRequest('apis', `cloud/v2/universes/${universeId}/places/${placeId}/instances/${instanceId}`, {headers: {'x-api-key': apiKey}})
             return <typeof models.engine.getInstance> JSON.parse(req)
         }
+    },
+
+    users: {
+        ['multiGetUsers']: async (userIds: number[], excludeBannedUsers?: boolean) => {
+            let req = await makeRequest('users', 'v1/users', {
+                body: {
+                    userIds: userIds,
+                    excludeBannedUsers: excludeBannedUsers
+                },
+                method: "POST"
+            })
+            return <typeof models.users.multiGetUsers> JSON.parse(req)
+        },
+
+        ['getUser']: async (userId: number) => {
+            let req = await makeRequest('users', `v1/users/${userId}`)
+            return <typeof models.users.userInformation> JSON.parse(req)
+        }
     }
 }

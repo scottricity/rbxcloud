@@ -105,5 +105,29 @@
               }
             }
           }
+    },
+
+    "users": {
+        "multiGetUsers": {
+            "data": [
+              {
+                "hasVerifiedBadge": true,
+                "id": 0,
+                "name": "string",
+                "displayName": "string"
+              }
+            ]
+          },
+
+          "userInformation": {
+            "description": "string",
+            "created": "2024-03-06T19:53:01.963Z",
+            "isBanned": true,
+            "externalAppDisplayName": "string",
+            "hasVerifiedBadge": true,
+            "id": 0,
+            "name": "string",
+            "displayName": "string"
+          }
     }
 }

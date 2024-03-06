@@ -1,5 +1,6 @@
-site_name: Documentation
+site_name: rcloud
 theme:
+  name: material
   palette: 
 
     # Palette toggle for light mode
@@ -13,3 +14,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
